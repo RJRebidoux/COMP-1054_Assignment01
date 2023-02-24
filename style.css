@@ -1,0 +1,210 @@
+/* Custom Fonts */
+@font-face {
+	font-family: HeaderFont;
+	src: url(assets/BANDITO_PERSONAL_USE.ttf)
+}
+
+@font-face {
+	font-family: Railroad;
+	src: url(assets/IFC\ RAILROAD\ 2.ttf);
+}
+
+/*----------------------- General ------------------------------*/
+
+body {
+	color: #ffffff;
+	background: url("https://images.unsplash.com/photo-1675526193131-83c24921f33c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2728&q=80") no-repeat center ;
+	background-size: cover;
+	margin: 15px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.page-wrapper {
+	width: 60%;
+	padding: 5px 10px 10px 10px;
+	margin: 5px 90px 10px 80px;
+}
+
+/*---------------------- Layout (Center) -------------------------------*/
+
+/*---- Backdrops ---------------*/
+
+[role="banner"] {
+	padding: 5px 5px 10px 5px;
+	margin-bottom: 20px;
+	background: transparent url(https://images.unsplash.com/photo-1506968430777-bf7784a87f23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80) no-repeat;
+	background-size: cover;
+	border: 20px solid;
+	border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9K7LfTznKahBcy8e9aLl1294ItKVTvY996KHSZUU07KrfpCVCTq5YYOwQYWs-RjsMTnE&usqp=CAU) 17 stretch;
+}
+
+.preamble {
+	margin: 0px 60px 0px 60px;
+}
+
+.preamble,
+#zen-supporting {
+	padding: 5px 30px 5px 30px;
+	margin-bottom: 20px;
+	background: transparent url(https://images.unsplash.com/photo-1506968430777-bf7784a87f23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80) no-repeat;
+	background-size: cover;
+	border: 20px solid;
+	border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9K7LfTznKahBcy8e9aLl1294ItKVTvY996KHSZUU07KrfpCVCTq5YYOwQYWs-RjsMTnE&usqp=CAU) 17 stretch;
+}
+
+/*------ Typography --------------*/
+
+h1,
+h2 {
+	font: italic 50px HeaderFont;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+h3 {
+	font: italic 40px Railroad;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+h3 + p::first-letter {
+	font-size: 35px;
+}
+
+.preamble,
+#zen-supporting {
+	font: 20px Railroad;
+	text-align: center;
+	padding: 20px 50px 20px 50px;
+}
+
+footer {
+	font-size: 40px;
+	text-align: center;
+	margin: 25px auto;
+}
+
+/*------------------------------- Layout (Side) -------------------------------*/
+
+/*--------------- BackDrop -----------------*/
+.summary {
+	position: absolute;
+	top: 73px;
+	right: 9vw;
+	background: transparent url(https://images.unsplash.com/photo-1506968430777-bf7784a87f23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80) no-repeat;
+	background-size: cover;
+	border: 20px solid;
+	border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9K7LfTznKahBcy8e9aLl1294ItKVTvY996KHSZUU07KrfpCVCTq5YYOwQYWs-RjsMTnE&usqp=CAU) 17 stretch;
+}
+
+.sidebar {
+	position: absolute;
+	top: 390px;
+	right: 9vw;
+	background: transparent url(https://images.unsplash.com/photo-1506968430777-bf7784a87f23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80) no-repeat;
+	background-size: cover;
+	border: 20px solid;
+	border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9K7LfTznKahBcy8e9aLl1294ItKVTvY996KHSZUU07KrfpCVCTq5YYOwQYWs-RjsMTnE&usqp=CAU) 17 stretch;
+}
+
+/*------------- Typography -------------------*/
+.summary,
+.sidebar {
+	font: 18px Railroad, sans-serif;
+	padding: 10px;
+	width: 200px;
+}
+
+.sidebar h3 {
+	font-size: 25px;
+}
+
+.sidebar li{
+	margin-bottom: 10px;
+}
+
+div > ul {
+	list-style-type: decimal;
+	color: #cccccc;
+}
+
+/*------------------------------ Links -----------------------------------*/
+
+a:link {
+	text-decoration: none;
+	color: #ffe9cd;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #f3cc99;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+	color: #fcd9ab;
+}
+
+footer a:link,
+footer a:visited {
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+/*---------------------------- Extras (Wooden Poles) ------------------------------*/
+
+.extra1 {
+	background: transparent url(https://media.istockphoto.com/id/1059231710/photo/close-up-of-wooden-telegraph-pole-with-rusty-staples-over-ripped-pieces-of-paper.jpg?s=612x612&w=0&k=20&c=mk_NuZRY6RlqiqgQ9Y19QP3GcW8so8_lSm2fjUBdwg4=);
+	z-index: -1;
+	position: fixed;
+	left: 20vw;
+	bottom: 0;
+	width: 80px;
+	height: 1400px;
+}
+
+.extra2 {
+	background: transparent url(https://media.istockphoto.com/id/1059231710/photo/close-up-of-wooden-telegraph-pole-with-rusty-staples-over-ripped-pieces-of-paper.jpg?s=612x612&w=0&k=20&c=mk_NuZRY6RlqiqgQ9Y19QP3GcW8so8_lSm2fjUBdwg4=);
+	z-index: -1;
+	position: fixed;
+	left: 50vw;
+	bottom: 0px;
+	width: 80px;
+	height: 1450px;
+}
+
+.extra3 {
+	background: transparent url(https://media.istockphoto.com/id/1059231710/photo/close-up-of-wooden-telegraph-pole-with-rusty-staples-over-ripped-pieces-of-paper.jpg?s=612x612&w=0&k=20&c=mk_NuZRY6RlqiqgQ9Y19QP3GcW8so8_lSm2fjUBdwg4=);
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	right: 17vw;
+	width: 80px;
+	height: 1400px;
+}
+
+/*---------------------------- Animation (Snowing) ------------------------------------------*/
+.extra4 {
+	position: fixed;
+	z-index: -2;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://www.freepnglogos.com/uploads/snow-png/snow-fall-png-images-download-25.png");
+	animation: snowing 10s linear infinite;
+}
+  
+@keyframes snowing {
+	0% {
+	  background-position: 0 0;
+	}
+	100% {
+	  background-position: 0px 5000px;
+	}
+}
